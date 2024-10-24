@@ -26,6 +26,7 @@ export const CurrentUserProvider = ({ children }) => {
         handleMount()
     }, []);
 
+
     useMemo(() => {
         axiosReq.interceptors.request.use(
             async (config) => {
