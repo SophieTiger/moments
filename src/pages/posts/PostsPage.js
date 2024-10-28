@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState } from "react";
 
 import Form from "react-bootstrap/Form";
 import Col from "react-bootstrap/Col";
@@ -8,8 +8,12 @@ import Container from "react-bootstrap/Container";
 
 import appStyles from "../../App.module.css";
 import styles from "../../styles/PostsPage.module.css";
+import { useLocation } from "react-router-dom/cjs/react-router-dom.min";
 
-function PostsPage() {
+function PostsPage({ message, filter = "" }) {
+    const [posts, setPost] = useState({ results: [] });
+    const [hasLoaded, setHasLoaded] = useState(false);
+    const { pathname } = useLocation();
   
   return (
     <Row className="h-100">
