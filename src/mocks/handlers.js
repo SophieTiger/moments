@@ -1,3 +1,5 @@
+import { rest } from "msw";
+
 const baseURL = 'https://codestar100-1ca13721cbe6.herokuapp.com/'
 
 export const handlers = [
