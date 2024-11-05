@@ -1,0 +1,115 @@
+# Query: console.log
+# ContextLines: 1
+
+24 results - 16 files
+
+src/index.js:
+  21  // If you want to start measuring performance in your app, pass a function
+  22: // to log results (for example: reportWebVitals(console.log))
+  23  // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
+src/components/NavBar.js:
+  25          } catch (err) {
+  26:             // console.log(err)
+  27          }
+
+src/components/__tests__/NavBar.test.js:
+  14      // screen.debug();
+  15:     // This is like console.log
+  16  
+
+src/contexts/CurrentUserContext.js:
+  21          } catch (err) {
+  22:             console.log(err)
+  23          }
+
+src/contexts/ProfileDataContext.js:
+  41      } catch (err) {
+  42:       console.log(err);
+  43      }
+
+  46    const handleUnfollow = async (clickedProfile) => {
+  47:     console.log("Unfollowing profile:", clickedProfile);
+  48      try {
+  49        await axiosRes.delete(`/followers/${clickedProfile.following_id}`);
+  50:       console.log("Unfollow successful");
+  51  
+
+  66      } catch (err) {
+  67:       console.log(err);
+  68        console.error("Error unfollowing:", err);
+
+  82        } catch (err) {
+  83:         console.log(err);
+  84        }
+
+src/pages/comments/CommentCreateForm.js:
+  39      } catch (err) {
+  40:       console.log(err);
+  41      }
+
+src/pages/comments/CommentEditForm.js:
+  36      } catch (err) {
+  37:       console.log(err);
+  38      }
+
+src/pages/posts/Post.js:
+  43          } catch(err){
+  44:             console.log(err);
+  45          }
+
+  59          } catch(err){
+  60:             console.log(err);
+  61          }
+
+  75          } catch(err) {
+  76:             console.log(err);
+  77  
+
+src/pages/posts/PostCreateForm.js:
+  65      } catch (err) {
+  66:       console.log(err);
+  67        if (err.response?.status !== 401) {
+
+src/pages/posts/PostEditForm.js:
+  40              } catch (err) {
+  41:                 console.log(err);
+  42              }
+
+  79          } catch (err) {
+  80:             console.log(err);
+  81              if (err.response?.status !== 401) {
+
+src/pages/posts/PostPage.js:
+  38        } catch (err) {
+  39:         console.log(err);
+  40        }
+
+src/pages/posts/PostsPage.js:
+  35        } catch (err) {
+  36:         console.log(err)
+  37        }
+
+src/pages/profiles/ProfileEditForm.js:
+  44          } catch (err) {
+  45:           console.log(err);
+  46            history.push("/");
+
+  80      } catch (err) {
+  81:       console.log(err);
+  82        setErrors(err.response?.data);
+
+src/pages/profiles/ProfilePage.js:
+  55        } catch (err) {
+  56:         console.log(err);
+  57        }
+
+src/pages/profiles/UsernameForm.js:
+  49      } catch (err) {
+  50:       console.log(err);
+  51        setErrors(err.response?.data);
+
+src/pages/profiles/UserPasswordForm.js:
+  49      } catch (err) {
+  50:       console.log(err);
+  51        setErrors(err.response?.data);
